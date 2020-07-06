@@ -1,7 +1,9 @@
 # Nicholas Wackowski, 7/6/2020
 # A program to calculate the likelihood of rolling x successes of P(x) chance given y events
 
-# --- Below function was taken from StackOverflow user dheerosaur and l3viathan ---
+
+# ----------------------- Taken from StackOverflow -----------------------
+# ------------- StackOverflow users dheerosaur and l3viathan -------------
 # https://stackoverflow.com/questions/4941753/is-there-a-math-ncr-function-in-python
 
 # Call the function as "of n possible choices, choose r"
@@ -14,7 +16,8 @@ def ncr(n, r):
     denom = reduce(op.mul, range(1, r+1), 1)
     return numer // denom  # or / in Python 2
 
-# --- End of code taken from StackOverflow
+# ----------------------- End of code taken from StackOverflow -----------------------
+
 
 # Iterates through all possible number of successes and sums their likelihoods,
 # thereby returning the total chance the dice will hit the target number of

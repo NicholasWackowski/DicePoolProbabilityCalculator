@@ -43,7 +43,11 @@ def calcProbability(numTrials, probSuccess, numSuccesses):
 def calculateProbSuccess(difficulty):
     return 1 - (difficulty-1)/10
 
+#	----------------------- MAIN FUNCTION -----------------------
 def main():
+	# The following variables can be changed as desired.
+	# This example suggests you are rolling 5 dice against a difficulty of 6,
+	# and want at least 3 successes.
     dicePool = 5
     difficulty = 6
     numSuccesses = 3
